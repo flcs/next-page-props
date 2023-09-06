@@ -10,31 +10,31 @@ function Menu(props: Props) {
     return (
         <nav className={styles.menu}>
             <Link href="/">
-                <a
+                <div
                     className={
                         props.activeItem === 'home' ? `${styles.active}` : ''
                     }
                 >
                     Home
-                </a>
+                </div>
             </Link>
             <Link href="/page1">
-                <a
+                <div
                     className={
                         props.activeItem === 'page1' ? `${styles.active}` : ''
                     }
                 >
                     Page 1
-                </a>
+                </div>
             </Link>
             <Link href="/page2">
-                <a
+                <div
                     className={
                         props.activeItem === 'page2' ? `${styles.active}` : ''
                     }
                 >
                     Page 2
-                </a>
+                </div>
             </Link>
         </nav>
     );
